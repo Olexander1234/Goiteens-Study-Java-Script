@@ -67,4 +67,4 @@ const v = 10 * 4;
 let n = 3;
 let m = 4;
 const k = (n**2) + (m**2);
-console.log(k);
+// console.log(k);
