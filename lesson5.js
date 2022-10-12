@@ -38,29 +38,9 @@
 
 
 
-// value = prompt("Веdіть любе число якшо ви угаdаєте число виграєте Приз!");
-// if(
-//     value >= 55  && value <= 99 
-// )
-// {
-//     console.log("Число потрапляє в діапазон ви виграли Приз!");
-// }
-// else{
-//     console.log("Число не  потрапляє в діапазон ви програли!");
-// }
 
-
-// const age  = " 55 ";
-// if ( "age === 0 >= 16 || age  === 17 >= 60 || age  === 61 >= 100  ")
-// {
-//     console.log("ви в дорослій групі");
-// }
-
-
-
-
-const stars = 3;
-let price;
+// const stars = 3;
+// let price;
 // if (stars ===  1) {
 //     price = 20;
 //     console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);
@@ -153,8 +133,8 @@ let price;
 //         break;
 // }
 
-for (let i = 0; i <= 1; i += 1)
-{console.log(i);}
+// for (let i = 0; i <= 1; i += 1)
+// {console.log(i);}
 
 
 
