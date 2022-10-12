@@ -1,40 +1,160 @@
-if( 5 > 8 )
-{
-// тіло
-console.log("hello");
-}
-console.log("hi");
+// if( 5 > 8 )
+// {
+// // тіло
+// console.log("hello");
+// }
+// console.log("hi");
 
-if(
-    100 > 500
-){
-console.log("перша умова вірна");
+// if(
+//     100 > 500
+// ){
+// console.log("перша умова вірна");
 
-}
-else{
-    console.log("Перша умова не вірна");
-
-
-
-}
+// }
+// else{
+//     console.log("Перша умова не вірна");
 
 
 
-const salary = 5000   ;
-if( salary > 1000 &&   salary < 2000
-    )
+// }
 
-{console.log("Рівень 1")
 
-}
-else if( salary = 2000  && salary < 3000 )
-{console.log("Рівень 2")
 
-}
-else{
-    console.log("hsdtym 3");
-}
+// const salary = 5000   ;
+// if( salary > 1000 &&   salary < 2000
+//     )
 
+// {console.log("Рівень 1")
+
+// }
+// else if( salary = 2000  && salary < 3000 )
+// {console.log("Рівень 2")
+
+// }
+// else{
+//     console.log("hsdtym 3");
+// }
+
+
+
+
+// value = prompt("Веdіть любе число якшо ви угаdаєте число виграєте Приз!");
+// if(
+//     value >= 55  && value <= 99 
+// )
+// {
+//     console.log("Число потрапляє в діапазон ви виграли Приз!");
+// }
+// else{
+//     console.log("Число не  потрапляє в діапазон ви програли!");
+// }
+
+
+// const age  = " 55 ";
+// if ( "age === 0 >= 16 || age  === 17 >= 60 || age  === 61 >= 100  ")
+// {
+//     console.log("ви в дорослій групі");
+// }
+
+
+
+
+const stars = 3;
+let price;
+// if (stars ===  1) {
+//     price = 20;
+//     console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);
+// }
+// else if(stars ===  2 ){
+
+//      price = 30;
+//     console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);
+// }
+// else if(stars ===  3 ){
+//      price = 50;
+//     console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);
+// }
+// else if(stars ===  4 ){
+//      price = 70;
+//     console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);
+// }
+// else if(stars === 5 ){
+//      price = 100;
+//     console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);
+// console.log('Такої кількості зірок нема');
+// switch (stars) {
+//     case 1:
+//         {price = 20;
+//         console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);}
+//         break;
+//         case 2:
+//         {price = 40;
+//         console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);}
+//         break;
+//         case 3:
+//         {price = 60;
+//         console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);}
+//         break;
+//         case 4:
+//         {price = 80;
+//         console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);}
+//         break;
+//         case 5:
+//         {price = 100;
+//         console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);}
+//         break;
+
+//     default:
+//         console.log('Такої кількості зірок нема');
+//         break;
+// }
+
+// switch (stars) {
+//     case 1:
+//         case 2:
+//         {price = 20;
+//         console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);}
+//         break;
+//         case 3:
+//             case 4:
+//         {price = 40;
+//         console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);}
+//         break;
+//         case 5:
+//         {price = 60;
+//         console.log(`Ціна готелю з ${stars} зірками  - ${price}$`);}
+//         break;
+        
+
+//     default:
+//         console.log('Такої кількості зірок нема');
+//         break;
+// }
+
+// const option = 2;
+// let massage = '';
+// switch (option) {
+//     case 1:
+//     console.log('wrkgpodsrkhgpoesdtkh');
+//         break;
+//         case 2:
+//             massage = 'egfvadsfhbfgdhnfsgnhfsgnfsghbgndfgn'
+//             console.log(masag);
+//                 break;
+//                 case 3:
+//                     massage = 'bshdfnhbsfdgnbhsfdgnb'
+//                     console.log(massage);
+//                         break;
+                
+        
+//     default: 
+//     massage = 'fwaGERVERASGERTFGHRTHER'
+//     console.log(massage);
+//         break;
+// }
+
+for (let i = 0; i <= 1; i += 1)
+{console.log(i);}
 
 
 
