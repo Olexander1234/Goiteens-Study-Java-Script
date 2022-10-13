@@ -136,5 +136,8 @@
 // for (let i = 0; i <= 1; i += 1)
 // {console.log(i);}
 
+let age = 12;
 
-
+while (age <=18 ) {
+ console.log(age);   
+}
