@@ -136,8 +136,26 @@
 // for (let i = 0; i <= 1; i += 1)
 // {console.log(i);}
 
-let age = 12;
+// let age = 12;
 
-while (age <=18 ) {
- console.log(age);   
+// 
+
+
+
+
+
+
+
+
+
+const min = 1;
+const max = 5;
+
+// for (let i = min; i <= max; i++) {
+//     console.log(i);
+// }
+let  i = 0;
+while ( i < max) {
+    i += 1
+    console.log(i);
 }
