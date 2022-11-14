@@ -107,11 +107,11 @@
 //  * Напиши функцию slugify(string) яка отримує рядок і повертає URL-slug
 //  * Заголовок статті складається тільки з букв та пропусків
 //  */
-// const slugfy = function (str) {
-//     const title = 'Top 10 benefits of React framework';
-// const slugTitle = str.toLocaleLowerCase().split(' ').join('-');
-// returnslugTitle;
-// }
+// // const slugfy = function (str) {
+// //     const title = 'Top 10 benefits of React framework';
+// // const slugTitle = str.toLocaleLowerCase().split(' ').join('-');
+// // returnslugTitle;
+// // }
 
 
 
@@ -142,3 +142,52 @@
 
 
 
+
+
+
+
+const username = 'Mangp'
+const emeil = 'dfhsdfgjhrfdsgj'
+
+const singupData = {
+    name: "home",
+    username: username,
+
+    emeil: emeil,
+}
+
+console.log(singupData);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const playlist = {
+    name: 'Плейлист',
+    rating: 5,
+    tracks: ['трек-1', 'трек-2', 'трек-3'],
+    
+    changeName(newName) {
+    // console.log("this: ", this);
+      this.name = newName;
+    }
+    ,
+
+    addTrack(newTrack){
+title.tracks.push(newTrack)
+    },
+    playlist.addTrack('nhtr-4');
+console.log(playlist);
+  };
