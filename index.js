@@ -146,19 +146,17 @@
 
 
 
-const username = 'Mangp'
-const emeil = 'dfhsdfgjhrfdsgj'
+// const username = 'Mangp'
+// const emeil = 'dfhsdfgjhrfdsgj'
 
-const singupData = {
-    name: "home",
-    username: username,
+// const singupData = {
+//     name: "home",
+//     username: username,
 
-    emeil: emeil,
-}
+//     emeil: emeil,
+// }
 
-console.log(singupData);
-
-
+// console.log(singupData);
 
 
 
@@ -174,20 +172,79 @@ console.log(singupData);
 
 
 
-const playlist = {
-    name: 'Плейлист',
-    rating: 5,
-    tracks: ['трек-1', 'трек-2', 'трек-3'],
+
+
+// const playlist = {
+//     name: 'Плейлист',
+//     rating: 5,
+//     tracks: ['трек-1', 'трек-2', 'трек-3'],
     
-    changeName(newName) {
-    // console.log("this: ", this);
-      this.name = newName;
-    }
-    ,
+//     changeName(newName) {
+//     // console.log("this: ", this);
+//       this.name = newName;
+//     }
+//     ,
 
-    addTrack(newTrack){
-title.tracks.push(newTrack)
-    },
-    playlist.addTrack('nhtr-4');
-console.log(playlist);
-  };
+//     addTrack(newTrack){
+// title.tracks.push(newTrack)
+//     },
+//     playlist.addTrack('nhtr-4');
+// console.log(playlist);
+//   };
+
+
+
+
+
+// . Створи пустий об'єкт user. Додай в об'єкт властивість 
+// userName зі своїм іменем. Додай в об'єкт властивість age зі
+//  своїм віком. Додай в об'єкт метод showUserName, який виводить 
+//  твоє ім'я. Додай в об'єкт метод updateAge, який додає під час
+//   виклику до твоєго віку 1.
+// // 
+  
+
+// const user = {
+//   userName : 'Sasha' ,
+//   age : 13,
+//   updateAge(num){
+// return this.age += num
+//   }
+  
+// }
+
+
+// // user.userName = 'Sasha' 
+// //  user.age = 13;
+
+
+// console.log(user.updateAge(1));
+
+
+
+
+// Створіть об'єкт calculator з трьома методами:
+
+// read(a, b) - запитує у користувача два числових значення і зберігає їх як властивості об'єкта.
+// sum() - повертає суму збережених значень.
+// mult() - повертає добуток збережених значень.
+
+
+
+// const calculator = {
+//   read(a, b){
+//     this.num1 = a;
+//     this.num2 = b;
+//     console.log(calculator);
+//   },
+//   sum(){
+//    return this.num1 + this.num2
+   
+//   }
+// }
+// calculator.read(3, 5)
+// console.log(calculator.sum());
+
+
+
+
