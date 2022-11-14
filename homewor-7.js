@@ -67,14 +67,44 @@ myNewArrowFunction("Js", "Python", "Java", "PHP", "C++");
 
 const myAverageScore = function(array){
     
-   console.log(array);
-    
+//    console.log(array);
+let result = 0;
+for (const number of array) {
+    result = (result + number) / array.length;
+}
+    switch (number) {
+        case result >= 91 && result <= 100 :
+
+        console.log("Myaveragescore: A ");
+            
+            break;
+            case result >= 81 && result <= 90 :
+
+                console.log("Myaveragescore: b ");
+                    
+                    break;
+            case result >= 71 && result <= 80 :
+                console.log("Myaveragescore: c ");
+                break;
+                case result >= 0 && result <= 71 :
+
+                    console.log("Myaveragescore: d ");
+                        
+                        break;
+                        
+        default:
+            break;
+    }
+
+    return number;
 }
 
 console.log(myAverageScore([100, 75, 81, 96]));
-// console.log(myAverageScore([45, 63, 85, 70]));
-// console.log(myAverageScore([77, 82, 60, 58]));
-// console.log(myAverageScore([93, 99, 93, 96]));
+console.log(myAverageScore([45, 63, 85, 70]));
+console.log(myAverageScore([77, 82, 60, 58]));
+console.log(myAverageScore([93, 99, 93, 96]));
+
+console.log(myAverageScore());
 
 
 
