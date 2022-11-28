@@ -384,12 +384,84 @@
 
 
 
-function checkStorage(available, ordered) {
+// function checkStorage(available, ordered) {
  
-  const  message = ordered > available ?  "Not enough goods in stock!" : "The order is accepted, our manager will contact you" ;
-  // Change code below this line
+//   const  message = ordered > available ?  "Not enough goods in stock!" : "The order is accepted, our manager will contact you" ;
+//   // Change code below this line
 
   
+//   // Change code above this line
+//   return message;
+
+
+
+// }
+// const a = 1;
+// const b = function (params) {
+  
+// }
+
+
+// const fnB = function (params) {
+//   console.log('Heloo');
+// }
+
+// const fnA = function (params) {
+//   console.log(cb());
+// }
+// fnA(fnB)
+
+
+
+function getSubscriptionPrice(type) {
+  let price;
+  // Change code below this line
+
+ switch (type) { // Change this line
+    case type === "starter": // Change this line
+      price = 0; // Change this line
+      break;
+
+    case  type === "professional": // Change this line
+      price = 20; // Change this line
+      break;
+
+    case  type === "organization": // Change this line
+      price = 50; // Change this line
+      break;
+  }
+
   // Change code above this line
-  return message;
+  return price;
 }
+getSubscriptionPrice("starter")
+
+getSubscriptionPrice("professional")
+getSubscriptionPrice("organization")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
