@@ -35,12 +35,23 @@ for (const key in object) {
 }
 
 
+// * Викличи функції для перевірки працездатності твоєї реалізації.
+// */
+console.log(countProps({})); // 0
+
+console.log(countProps({ name: 'Mango', age: 2 })); // 2
+
+console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
 
 // Напиши функцію findBestEmployee(employees), яка приймає об'єкт співробітників і повертає ім'я найпродуктивнішого (який виконав більше всіх задач
 // ). Співробітники і кількість виконаних завдань містяться як властивості об'єкта в форматі "ім'я":"кількість задач".
 
 const findBestEmployee = function (employees) {
   // твій код
+
+  for (key in findBestEmployee) {
+   
+  }
 };
 
 /*
@@ -72,11 +83,3 @@ console.log(
   }),
 ); // lux
 
-/*
- * Викличи функції для перевірки працездатності твоєї реалізації.
- */
-console.log(countProps({})); // 0
-
-console.log(countProps({ name: 'Mango', age: 2 })); // 2
-
-console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
