@@ -49,10 +49,11 @@ console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); 
 const findBestEmployee = function (employees) {
   // твій код
 
-  for (key in findBestEmployee) {
-   
-  }
+  return Math.max(Object(...employees) );
+
+
 };
+console.log(findBestEmployee ());
 
 /*
  * Викличи функції для перевірки працездатності твоєї реалізації.
