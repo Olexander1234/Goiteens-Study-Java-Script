@@ -413,17 +413,44 @@
 
 
 
+// перебираючи методи масиву
 
 
 
 
+// forEach
+
+const numbers = [5, 10, 15, 20, 25]
 
 
+numbers.forEach(function (number){
+    // console.log(number);
+})
 
 
+// console.log(numbers);
+
+// filter
+
+const numbersFiltr = [5, 10, 15, 20, 25]
+const filteredNumbers = numbersFiltr.filter(function (number) {
+    return !number
+    
+})
+
+// console.log( filteredNumbers);
 
 
+// Map
+const numberMap = [5, 10, 15, 20, 25]
 
+const doubleNums = numbers.map(function (number) {
+    return number * 2
+    
+})
+
+
+// console.log(doubleNums);
 
 
 
