@@ -115,7 +115,7 @@ function checkStorage(available, ordered) {
   if(ordered === 0 )
     {message =  "There are no products in the order!"  }
   
-    else if(available > ordered ){
+    else if(available> ordered ){
       message = "Your order is too large, there are not enough items in stock!"
     }
     
