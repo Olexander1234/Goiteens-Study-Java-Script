@@ -455,3 +455,11 @@ const doubleNums = numbers.map(function (number) {
 
 
 
+const navRef = document.querySelector(".site-nav")
+console.log(navRef);
+// const navItemRef = navRef.querySelectorall(".sites-nav")
+const navLinkEl = document.querySelectorAll('.site-nav__link')
+console.log(navLinkEl );
+
+const imgEl = document.querySelector('.hero__image')
+console.log(imgEl);
