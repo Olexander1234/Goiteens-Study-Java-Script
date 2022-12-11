@@ -455,11 +455,48 @@ const doubleNums = numbers.map(function (number) {
 
 
 
-const navRef = document.querySelector(".site-nav")
-console.log(navRef);
-// const navItemRef = navRef.querySelectorall(".sites-nav")
-const navLinkEl = document.querySelectorAll('.site-nav__link')
-console.log(navLinkEl );
+// const navRef = document.querySelector(".site-nav")
+// console.log(navRef);
+// // const navItemRef = navRef.querySelectorall(".sites-nav")
+// const navLinkEl = document.querySelectorAll('.site-nav__link')
+// console.log(navLinkEl );
 
-const imgEl = document.querySelector('.hero__image')
+// const imgEl = document.querySelector('.hero__image')
+// console.log(imgEl);
+
+
+
+const  heroRef  = document.querySelector(".hero")
+
+const titleEl = document.createElement('h1')
+titleEl.classList.add('title')
+titleEl.textContent = 'Заголовок'
+titleEl.style.color = 'tomato'
+console.log(titleEl);
+
+
+const imgEl = document.createElement('img');
+imgEl.src = 'https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988_1280.jpg'
+imgEl.alt = 'img';
+imgEl.width = '500'
 console.log(imgEl);
+
+
+// heroRef.insertBefore(titleEl )
+
+
+const navItemEl = document.createElement('li')
+navItemEl.classList.add('site-nav__item')
+const linkEl = document.createElement("a")
+
+linkEl.classList.add('nav-link');
+console.log(linkEl);
+
+navItemEl.append(linkEl)
+console.log(navItemEl );
+
+const ulEl = document.querySelector('.site-nav')
+
+// Створюємо зображення
+//  * https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988_1280.jpg
+//  * valais-alpine-mountains-glacier

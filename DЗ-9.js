@@ -90,8 +90,180 @@ const users = [
 
 //   Отримати масив імен всіх користувачів (поле name).
 
-const getUserNames = users.map {
+// const numberMap = [5, 10, 15, 20, 25]
+
+// const doubleNums = numbers.map(function (number) {
+//     return number * 2
+    
+// })
+const getUserNames = users.map(function ({name})  {
   // твій код
+  return name;
+});
+
+console.log(getUserNames);
+
+
+
+
+
+// Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
+
+const getUsersWithEyeColor = (users, color) => {
+  // твій код
+  const usersWithEyeColor = users.filter(function (user) {
+    
+   return user.eyeColor === color;
+  })
+  return usersWithEyeColor
+  
 };
 
-console.log(getUserNames(users));
+
+console.log(getUsersWithEyeColor(users, 'blue')); // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
+
+
+// Отримати масив імен користувачів за статтю (поле gender).
+
+const getUsersWithGender = (users, gender) => {
+  // твій код
+  const usersWithGender = users.filter(function (user) {
+    return user.gender === gender;
+  })
+  return  usersWithGender
+};
+
+console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
+
+
+
+// Отримати масив тільки неактивних користувачів (поле isActive).
+
+const getInactiveUsers = users => {
+  // твій код
+
+  const inactiveUsers = users.filter(function (users) {
+    return users.isActive === false;
+  })
+  return inactiveUsers;
+};
+
+console.log(getInactiveUsers(users)); // [об'єкт Moore Hensley, об'єкт Ross Vazquez, об'єкт Blackburn Dotson]
+
+
+
+
+// Отримати користувача (не масив) по email (поле email, він унікальний).
+
+const getUserWithEmail = (users, email) => {
+  // твій код
+
+  const UserWithEmail = users.find(function (users) {
+    return email
+  })
+  return UserWithEmail
+};
+
+console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {об'єкт користувача Sheree Anthony}
+console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {об'єкт користувача Elma Head}
+
+
+
+
+// Отримати масив користувачів, які потрапляють у вікову категорію від min до max років (поле age).
+
+const getUsersWithAge = (users, min, max) => {
+  // твій код
+
+  const UsersWithAge =  users.filter(function (users) {
+    return users.age  >= min  && users.age  <= max
+  })
+  return UsersWithAge
+};
+
+console.log(getUsersWithAge(users, 20, 30)); // [об'єкт Ross Vazquez, об'єкт Elma Head, об'єкт Carey Barr]
+
+console.log(getUsersWithAge(users, 30, 40));
+// [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Blackburn Dotson, об'єкт Sheree Anthony]
+
+
+
+
+
+// Отримати загальну суму балансу (поле balance) всіх користувачів.
+
+const calculateTotalBalance = users => {
+  // твій код
+  const summ = users.reduce((acc, value) => acc + users.balance, 0);
+
+
+    
+  return summ;
+  
+};
+
+console.log(calculateTotalBalance(users)); // 20916
+
+
+
+
+
+
+// Масив імен всіх користувачів у яких є друг із зазначеним ім'ям.
+
+const getUsersWithFriend = (users, friendName) => {
+  // твій код
+  const UsersWithFriend = users.find(function (users) {
+    return friendName ;
+  })
+
+return UsersWithFriend
+
+};
+
+console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
+console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
+
+
+
+
+
+// Масив імен (поле name) людей, відсортованих в залежності від кількості їх друзів (поле friends)
+
+const getNamesSortedByFriendsCount = users => {
+  // твій код
+ 
+    const NamesSortedByFriendsCount = users.sort(function(a, b) {
+      return a.friends.length - b.friends.length;
+    }).map(e=>{
+      return e.name;
+      
+
+    });
+    return NamesSortedByFriendsCount
+  }
+ 
+;
+
+console.log(getNamesSortedByFriendsCount(users));
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
+
+
+
+
+
+// Отримати масив всіх умінь всіх користувачів (поле skills), при цьому не має бути повторюваних умінь і вони повинні бути відсортовані в алфавітному порядку.
+
+const getSortedUniqueSkills = users => {
+  // твій код
+
+  const SortedUniqueSkills = users.reduce(function (acc, users) {
+    return users.skills
+  }).sort(function (users) {
+    return 
+  })
+};
+
+console.log(getSortedUniqueSkills(users));
+// [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 
