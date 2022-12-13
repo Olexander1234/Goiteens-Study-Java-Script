@@ -143,8 +143,8 @@ console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazq
 const getInactiveUsers = users => {
   // твій код
 
-  const inactiveUsers = users.filter(function (users) {
-    return users.isActive === false;
+  const inactiveUsers = users.filter(function (user) {
+    return !users.isActive ;
   })
   return inactiveUsers;
 };
@@ -159,7 +159,7 @@ console.log(getInactiveUsers(users)); // [об'єкт Moore Hensley, об'єкт
 const getUserWithEmail = (users, email) => {
   // твій код
 
-  const UserWithEmail = users.find(function (users) {
+  const UserWithEmail = users.find(function (user) {
     return email
   })
   return UserWithEmail
@@ -176,7 +176,7 @@ console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {об'єкт к�
 const getUsersWithAge = (users, min, max) => {
   // твій код
 
-  const UsersWithAge =  users.filter(function (users) {
+  const UsersWithAge =  users.filter(function (user) {
     return users.age  >= min  && users.age  <= max
   })
   return UsersWithAge
@@ -214,11 +214,12 @@ console.log(calculateTotalBalance(users)); // 20916
 
 const getUsersWithFriend = (users, friendName) => {
   // твій код
-  const UsersWithFriend = users.find(function (users) {
-    return friendName ;
+  const UsersWithFriend = users.filter(function (user) {
+    users.friends.includes(friendName );
+    return users.name;
   })
 
-return UsersWithFriend
+return UsersWithFriend;
 
 };
 
