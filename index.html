@@ -33,11 +33,102 @@
   
       <hr />
   
-      <input type="text" class="js-input" />
-  
+      <ul id="categories">
+        <li class="item">
+          <h2>Тварини</h2>
       
+          <ul>
+            <li>Кіт</li>
+            <li>Хом'як</li>
+            <li>Кінь</li>
+            <li>Папуга</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Продукти</h2>
+      
+          <ul>
+            <li>Хліб</li>
+            <li>Петрушка</li>
+            <li>Сир</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Технології</h2>
+      
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node</li>
+          </ul>
+        </li>
+      </ul>
   
-    
-    <script src="./DЗ-9.js" ></script>
+      <div class="color-picker js-color-picker"></div>
+  
+      <div class="js-products"></div>
+
+
+      <ul id="ingredients"></ul>
+
+
+      <ul id="gallery"></ul>
+      
+
+      
+      <form class="js-register-form" autocomplete="off">
+        <div role="group">
+          <label>
+            Пошта
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Пароль
+            <input name="password" type="password" />
+          </label>
+        </div>
+  
+        <br />
+        <div role="group">
+          <b>Тип піписки:</b>
+          <label>
+            <input type="radio" name="subscription" value="free" />
+            Free
+          </label>
+  <label>
+            <input type="radio" name="subscription" value="basic" />
+            Basic
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="pro" />
+            Pro
+          </label>
+        </div>
+  
+        <br />
+        <button type="submit">Зареєструватися</button>
+      </form>
+  
+
+
+      <label>
+        Ім'я
+        <input type="text" class="js-input" />
+      </label>
+  
+      <p>
+        <label>
+          <input type="checkbox" class="js-license" />
+          Приймаю умови договору
+        </label>
+      </p>
+  
+      <button type="submit" disabled class="js-button">
+        Зареєструватися як <span>Анонім</span>
+      </button>
+
+    <script src="./homework-10.js" ></script>
 </body>
 </html>
