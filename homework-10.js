@@ -353,3 +353,10 @@ const button = document.querySelector('js-button')
 input.addEventListener('focus',())
 
 
+
+
+
+
+
+
+const result =  fullName.length
