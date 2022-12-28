@@ -24,13 +24,13 @@
 
 const input = document.querySelector('#validation-input')
 input.addEventListener('input', InputGreen)
-
+const dataLength = Number (input.dataset.length);
 function InputGreen(event) {
-  console.dir(event.currentTarget.value.lenght);
-if (  event.currentTarget.value.lenght === 6) {
-  input.classList.add('valid')
+  console.dir(event.currentTarget.value.length);
+if (event.currentTarget.value.length === dataLength) {
+  return  input.classList.add('valid')
 } else {
-  input.classList.add('invalid')
+  return input.classList.add('invalid')
 
 }
 
