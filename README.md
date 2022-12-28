@@ -201,3 +201,33 @@ input.addEventListener('focus',())
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arr.sort((a, b) => a.name.localeCompare(b.name) && a.surname.localeCompare(b.surname))

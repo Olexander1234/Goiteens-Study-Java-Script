@@ -3,3 +3,12 @@
 
 /* <input type="text" placeholder="Ваше ім'я?" id="name-input" />
 <h1>Привіт, <span id="name-output">незнайомець</span>!</h1> */
+// const SpanEl = document.querySelector('#name-output')
+const SpanEl = document.querySelector('#name-output')
+const input = document.querySelector('#name-input')
+input.addEventListener('input',  inputChangeHandler)
+ 
+function  inputChangeHandler (event) {
+    console.dir(event.currentTarget.value);
+    SpanEl.textContent = event.currentTarget.value
+}

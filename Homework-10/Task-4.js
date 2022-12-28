@@ -11,26 +11,21 @@
 // </div>
 
 
-const counterValue = document.querySelector("#value")
-const decrementEl = document.querySelector('.decrement');
-const incrementEl = document.querySelector(".increment");
-
-counterValue.textContent = Number(counterValue);
-
-console.dir(counterValue);
-
-decrementEl.addEventListener("click", (event)=>{
-    event.preventDefault()
-    counterValue.textContent = -1
-
-    console.log("від числа відняли 1 ");
-})
-
-incrementEl.addEventListener("click", (event)=>{
-    event.preventDefault()
-    counterValue.textContent = +1
-
-    console.log("до числа додали  1 ");
-})
+const decrementBtn = document.querySelector('[data-action="decrement"]')
+const incrementBtn = document.querySelector('[data-action="increment"]')
+const value = document.querySelector('#value')
 
 
+decrementBtn.addEventListener('click', decrement)
+incrementBtn.addEventListener('click', increment)
+
+let counterValue = 0;
+
+function increment() {
+  value.textContent = counterValue += 1
+}
+
+function decrement() {
+ counterValue -= 1
+ value.textContent = counterValue
+}

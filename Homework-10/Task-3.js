@@ -8,7 +8,7 @@
 
 // Всі елементи галереї повинні додаватися в DOM за одну операцію вставки.
 // Додай мінімальне оформлення галереї флексбоксами або грід через   css-класи.
-
+const GalleryEl = document.querySelector('#gallery')
 
 const images = [
     {
@@ -28,52 +28,8 @@ const images = [
     },
   ];
 
-  
-
-
-  const option = images[0]
- console.log(option);
- 
-const CreateLiEl = document.createElement("li")
-
-
-const ImgEl = document.createElement("img");
-
-ImgEl.src = option.url;
-
-ImgEl.alt = option.alt
-
-console.log(ImgEl);
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    // const createImgEl = function (options) {
-    //     return options.map(function (option) {
-    //         const LiEl = document.createElement("li")
-    //        const ImgEl = document.createElement('img');
-            
-             
-    //        ImgEl.src = option.url;
-    //        ImgEl.alt= option.alt;
-    //      return ImgEl
-    //      })    
-         
-    //    }
-     
-    //    const imgsEl = createImgEl(images);
-     
-
-    //    const titleRef = document.querySelector("#gallery")
-     
-    //    UlRefEl.insertAdjacentHTML(afterbegin, String)
-
-    //    console.log(UlRefEl);
+  const imagesArray = images.map((image)=>{
+    return  `<img url = "${image.url}" alt =" ${image.alt}" width="50"  height="50"> `
+      }).join('')
+    console.log( imagesArray );
+    GalleryEl.insertAdjacentHTML('afterbegin', imagesArray)
